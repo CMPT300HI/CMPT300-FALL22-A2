@@ -29,6 +29,3 @@ jobs:
     - name: remove testscript from student dir
       if: always()
       run: rm -f A2.py
-    - name: check grade files
-      if: always()
-      run: cat Student_grade.txt
