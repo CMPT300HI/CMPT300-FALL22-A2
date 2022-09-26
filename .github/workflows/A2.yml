@@ -16,16 +16,7 @@ jobs:
     - name: make
       run: make
     - name: cshell 
-      run: ./cshell myscript.txt
+      run: ./cshell testScript.txt
     - name: check files 
       if: always()
       run: ls 
-    - name: copy test script to student dir
-      if: always()
-      run: cp /tmp/testscript/A2.py .
-    - name: run test script
-      if: always()
-      run: python3 A2.py
-    - name: remove testscript from student dir
-      if: always()
-      run: rm -f A2.py
